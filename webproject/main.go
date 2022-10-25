@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	// "net/http"
 )
 
@@ -11,6 +12,7 @@ import (
 
 func main() {
 	//	http.HandleFunc("/", HandlerFunc)
+	fmt.Fprintln(os.Stdout, "Hello World!")
 	fmt.Println("Starting the server on :3000...")
 	// http.ListenAndServe(":3000", nil)
 }
